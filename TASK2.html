@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK2</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(246, 6, 246);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 80px;
+        }
+
+        .kkk {
+            display: none;
+        }
+
+        .kkk+label::before {
+            content: " ";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .kkk:checked+label::before {
+            content: "✔";
+            color: rgb(246, 6, 246);
+        }
+
+        input[type="radio"] {
+            accent-color: rgb(246, 6, 246);
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <p>头像
+            <input type="file" name="touxiang">
+        </p>
+
+        <p>昵称
+            <input type="text" name="nicheng">
+        </p>
+
+        <p>学历
+            <select name="xueli">
+                <option value="dazhuan">大专</option>
+                <option value="benke">本科</option>
+            </select>
+        </p>
+
+        <p>性别
+            <input type="radio" name="sex" value="man" checked> 男
+            <input type="radio" name="sex" value="woman"> 女
+        </p>
+
+        <p>爱好
+            <input type="checkbox" id="hobby1" class="kkk"> <label for="hobby1">电影</label>
+            <input type="checkbox" id="hobby2" class="kkk"> <label for="hobby2">摄影</label>
+            <input type="checkbox" id="hobby3" class="kkk"> <label for="hobby3">音乐</label>
+            <input type="checkbox" id="hobby4" class="kkk"> <label for="hobby4">阅读</label>
+        </p>
+
+        <p>签名
+            <textarea name="signature" rows="4"></textarea>
+        </p>
+
+        <input type="submit" value="保存">
+    </form>
+
+</body>
+
+</html>
