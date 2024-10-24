@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模块2</title>
+    <style>
+        nav {
+            display: flex;
+            background-color: rgb(233, 233, 233);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            display: flex;
+            height: 30px;
+            margin: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-list a {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .logo {
+            width: 50px;
+            height: 30px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search {
+            border-color: orangered;
+            height: 20px;
+            top: 20px;
+            display: flex;
+
+        }
+
+        .anniu {
+            background-color: orangered;
+            color: white;
+            border: none;
+            height: 27px;
+            display: flex;
+
+        }
+        
+        .touxiang {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 30px;
+        }
+
+        .anniu2 {
+            background-color: rgb(10, 225, 18);
+            border: none;
+            color: white;
+            height: 30px;
+            width: 70px;
+            margin-left: 20px;
+        }
+
+        .anniu,.anniu2,.touxiang:hover {
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+
+        }
+
+        .neirong {
+            width: 680px;
+            height: 200px;
+        }
+
+        .smallbox1 {
+            width: 170px;
+            height: 250px;
+        }
+
+        .round {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            color: rgb(10, 225, 18);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(10, 225, 18);
+            font-size: 25px;
+        }
+
+        .round:hover {
+            background-color: rgb(10, 225, 18);
+            color: white;
+            cursor: pointer;
+        }
+        .box2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .box3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 680px;
+        }
+
+        .no {
+            width: 120px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .wenzi {
+            border: 1px solid rgb(10, 225, 18);
+        }
+
+        
+
+        .num {
+            font-size: 50px;
+            color: red;
+            text-decoration: underline;
+        }
+      
+        .wenzi:hover{
+            background-color: rgb(9, 147, 13);
+            color: white;
+            cursor: pointer;
+        }
+
+        .box4{
+            width:680px;
+            height:200px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .last{
+            width: 120px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: salmon;
+            color: white;
+            margin: 10px;
+        }
+        .last:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h3 style="color: rgb(10, 225, 18);">学而</h3>
+        </div>
+
+        <ul class="nav-list">
+            <li><a href="#" style="color:orangered">首页</a></li>
+            <li><a href="#">分类查看</a></li>
+        </ul>
+        <input type="text" class="search"><input type="submit" value="搜索" class="anniu">
+        <img src="touxiang.png" class="touxiang">
+        <input type="submit" value="退出" class="anniu2">
+    </nav>
+    <div class="container">
+        <div class="box1">
+            <img src="neirong.png" class="neirong">
+        </div>
+        <div class="box2">
+            <div class="smallbox1">
+                <div class="round">公</div>
+                <ul>
+                    <li>界面与设计应用<br>房子</li>
+                    <li>java程序编程<br>赵三金</li>
+                    <li>设计师的自我修养<br>分享课程</li>
+                </ul>
+            </div>
+            <div class="smallbox1">
+                <div class="round">通</div>
+                <ul>
+                    <li>计算机基础<br>胡薇</li>
+                    <li>植物观赏学基础<br>韩一尾</li>
+                    <li>生活常识101<br>分享</li>
+                </ul>
+            </div>
+            <div class="smallbox1">
+                <div class="round">素</div>
+                <ul>
+                    <li>新生引导课堂<br>开学季</li>
+                    <li>党课精神研讨课<br>分享课程</li>
+                    <li>专业方向<br>毕业生</li>
+                </ul>
+            </div>
+            <div class="smallbox1">
+                <div class="round">专</div>
+                <ul>
+                    <li>影视广告摄影基础<br>分享课程</li>
+                    <li>程序员的养成<br>赵多金</li>
+                    <li>如何让设计师改稿<br>甲方</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="box3">
+            <div style="font-size: 20px; width:600px;" align=center>最热课程动态
+                <div style="color: rgb(10, 225, 18);font-size: 12px; width:600px" align="center">精心为您推荐最佳口碑课程排行NO.1-NO.5
+                </div>
+            </div>
+
+            <div class="no wenzi"> <span>常用</span><span>《化学生活》</span></div>
+            <div class="no num">02</div>
+            <div class="no wenzi"> <span>张勇</span><span>《java语言程序设计》</span></div>
+            <div class="no num">04</div>
+            <div class="no wenzi"> <span>张国</span><span>《计算机组装》</span></div>
+            <div class="no num">01</div>
+            <div class="no wenzi"> <span>李达</span><span>《大学生语文》</span></div>
+            <div class="no num">03</div>
+            <div class="no wenzi"><span> 苏燕</span><span>《视觉语言》</span></div>
+            <div class="no num">05</div>
+
+        </div>
+        <div class="box4">
+            <div style="font-size: 20px; width:600px;height:20px;text-align: center;">猜你喜欢课程</div>
+            <div style="color: rgb(10, 225, 18);font-size: 12px;height:12px; width:600px;text-align: center;">根据您的浏览记录，推荐相似课程列表</div>
+        <div class="last"><span>《毛泽东思想》</span><span>赵三金</span></div>
+        <div class="last"><span>《邓小平理论》</span><span>胡一薇</span></div>
+        <div class="last"><span>《科学发展观》</span><span>梁非凡</span></div>
+        <div class="last"><span>《三个代表》</span><span>韩一尾</span></div>
+        
+        </div>
+
+    </div>
+</body>
+
+</html>
